@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task9</title>
+    <link href="css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="search_bar">
+            <input type="text">
+            <a class="login" href="#"><i class="glyphicon glyphicon_user"></i>登录</a>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <aside>
+            <section class="user_info">
+                <div class="photo_name">
+                    <div class="photo_wrapper">
+                        <div class="photo"></div>
+                    </div>
+                    <p class="name">WKY123</p>
+                </div>
+                <div class="follow">
+                    <ul>
+                        <li><a href="#">110<br/><small>收藏</small></a></li>
+                        <li><a href="#">313<br/><small>粉丝</small></a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="items">
+                <ul class="item_list">
+                    <li class="main selected">
+                        <a class="main_item">个人报表</a>
+                        <ul class="drop_down">
+                            <li class="second selected">
+                                <a class="child_item">文件一</a>
+                                <ul class="drop_down">
+                                    <li class="selected">
+                                        <a class="grand_child_item">文档1</a>
+                                    </li>
+                                    <li class="selected">
+                                        <a class="grand_child_item">文档2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="second">
+                                <a class="child_item">文件二</a>
+                            </li>
+                            <li class="second">
+                                <a class="child_item">文件三</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="main">
+                        <a class="main_item"><i class="glyphicon glyphicon-star"></i>个人收藏</a>
+                    </li>
+                    <li class="main">
+                        <a class="main_item"><i class="glyphicon glyphicon-send"></i>我的分享</a>
+                    </li>
+                    <li class="main">
+                        <a class="main_item"><i class="glyphicon glyphicon-picture"></i>图库</a>
+                    </li>
+                    <li class="main">
+                        <a class="main_item"><i class="glyphicon glyphicon-record"></i>成长记录</a>
+                    </li>
+                    <li class="main">
+                        <a class="main_item"><i class="glyphicon glyphicon-scale"></i>账户信息</a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+        <div class="content">
+            <section class="content_top">
+                <ul>
+                    <li>C站</li>
+                    <li>个人报表</li>
+                    <li>文件一</li>
+                    <li>文档一</li>
+                </ul>
+            </section>
+
+            <section class="main-content flow-wrapper">
+                <div class="search-box flex">
+                    <form method="POST">
+                        <div class="column query">
+                            <label>查询项</label>
+                            <a class="btn-select">
+                                <input type="radio" class="hidden-btn" name="item"/>
+                                <ul class="dropdown">
+                                    <li>第一项</li>
+                                    <li>第二项</li>
+                                    <li>第三项</li>
+                                </ul>
+                                <span class="cur-select">第一项<i class="glyphicon glyphicon-chevron-down"></i></span>
+                            </a>
+                        </div>
+                        <div class="column buyer-seller">
+                            <div>
+                                <label>买方</label>
+                                <a class="btn-select buyer">
+                                    <input type="radio" class="hidden-btn" name="item"/>
+                                    <ul class="dropdown">
+                                        <li>小A</li>
+                                        <li>小B</li>
+                                        <li>小C</li>
+                                    </ul>
+                                    <span class="cur-select">小A<i class="glyphicon glyphicon-chevron-down"></i></span>
+                                </a>
+                            </div>
+                            <div class="seller">
+                                <label>卖方</label>
+                                <a class="btn-select buyer">
+                                    <input type="radio" class="hidden-btn" name="item"/>
+                                    <ul class="dropdown">
+                                        <li>小D</li>
+                                        <li>小E</li>
+                                        <li>小F</li>
+                                    </ul>
+                                    <span class="cur-select">小D<i class="glyphicon glyphicon-chevron-down"></i></span>
+                                </a>
+                            </div>
+                            <a class="change">换</a>
+                        </div>
+                        <div class="column details">
+                            <div>
+                                <label>日期</label>
+                                <a class="btn-select input-date">
+                                    2016-04-01<input type="text" class="hidden-btn" name="date" value="2016-04-01"/>
+                                </a>
+                                <label>总耗时</label>
+                                <a class="btn-select time">
+                                    <input type="radio" class="hidden-btn" name="item"/>
+                                    <ul class="dropdown">
+                                        <li>8天</li>
+                                        <li>15天</li>
+                                        <li>30天</li>
+                                    </ul>
+                                    <span class="cur-select">8天<i class="glyphicon glyphicon-chevron-down"></i></span>
+                                </a>
+                            </div>
+                            <div class="counters">
+                                <label>人数</label>
+                                <a class="btn-select counter">
+                                    <input type="radio" class="hidden-btn" name="item"/>
+                                    <ul class="dropdown">
+                                        <li>10人</li>
+                                        <li>20人</li>
+                                        <li>30人</li>
+                                    </ul>
+                                    <span class="cur-select">10人<i class="glyphicon glyphicon-chevron-down"></i></span>
+                                </a>
+                                <label>成交项</label>
+                                <a class="btn-select deals">
+                                    <input type="radio" class="hidden-btn" name="item"/>
+                                    <ul class="dropdown">
+                                        <li>10项</li>
+                                        <li>20项</li>
+                                        <li>30项</li>
+                                    </ul>
+                                    <span class="cur-select">10项<i class="glyphicon glyphicon-chevron-down"></i></span>
+                                </a>
+                                <a href="#" class="search-btn">搜索</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>

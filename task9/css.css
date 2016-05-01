@@ -1,0 +1,372 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+header
+{
+    width: 100%;
+    height: 56px;
+    background-color: #2189bf;
+    z-index: 999;
+}
+.logo
+{
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin-left: 50px;
+    margin-top: 10px;
+    background: url("image/logo.png");
+}
+.search_bar
+{
+    float: right;
+    margin-top: 14px;
+    margin-right: 100px;
+}
+.search_bar input
+{
+    width: 312px;
+    height: 28px;
+    padding-left: 40px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: .75rem;
+    color: #aaaaaa;
+    background: #ffffff url("image/search_icon.png") no-repeat 17px 6px;
+}
+.search_bar .login
+{
+    display: inline-block;
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: .75rem;
+    text-decoration: none;
+    line-height: 28px;
+}
+
+/*wrapper*/
+.wrapper
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+.wrapper:after
+{
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+aside
+{
+    flex: 0 0 260px;
+    background-color: #2a2e3d;
+}
+aside section
+{
+    width: 100%;
+}
+aside .photo_name
+{
+    margin-bottom: 20%;
+}
+aside .user_info
+{
+    height: 150px;
+    padding: 18px 45px;
+}
+aside .user_info .photo_name .photo_wrapper
+{
+    float: left;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #bababe;
+    border-radius: 50px;
+}
+aside .user_info .photo_name .photo_wrapper .photo
+{
+    width: 80%;
+    height: 80%;
+    margin: 6px;
+    background-color: #bababe;
+    border-radius: 50px;
+}
+aside .user_info .photo_name .name
+{
+    line-height: 60px;
+    margin-left: 80px;
+    color: #ffffff;
+}
+aside .user_info .follow ul
+{
+    display: inline-block;
+}
+aside .user_info .follow ul li
+{
+    box-sizing: content-box;
+    display: inline-block;
+    width: 40px;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 100%;
+    margin-top: -10px;
+}
+aside .user_info .follow ul li:first-child
+{
+    border-right: 1px solid #576477;
+}
+aside .user_info .follow ul li a
+{
+    color: #576477;
+    text-decoration: none;
+}
+aside .user_info .follow ul li a:hover
+{
+    color: #e74f4d;
+}
+
+aside .items
+{
+    padding-top: 10px;
+}
+aside .items li
+{
+    list-style: none;
+    line-height: 40px;
+}
+aside .items li i
+{
+    margin-right: 10px;
+}
+aside .items .item_list
+{
+    width: 100%;
+    font-size: .75rem;
+    color: #576477;
+}
+aside .items .item_list .main
+{
+    padding: 0 45px;
+}
+aside .items .item_list .main.selected, aside .items .item_list .main:hover
+{
+    background-color: #383d4e;
+    cursor: pointer;
+    color: #ffffff;
+}
+aside .items .drop_down
+{
+    width: 100%;
+    color: #576477;
+}
+aside .items .drop_down li
+{
+    padding: 0 25px;
+}
+aside .items .drop_down li:hover, aside .items .drop_down li.selected
+{
+    color: #ffffff;
+}
+
+.content
+{
+    flex: 0 0 1020px;
+    background-color: #eeeded;
+}
+.content .content_top ul
+{
+    display: inline-block;
+    margin-left: 20px;
+}
+.content .content_top ul li
+{
+    display: inline-block;
+    line-height: 50px;
+    font-size: .75rem;
+}
+.content .content_top ul li:after
+{
+    content: '/';
+    padding: 0 10px;
+}
+.content .content_top ul li:last-child:after
+{
+    content: '';
+}
+.content .content_top ul li:hover
+{
+    color: #e74f4d;
+    cursor: pointer;
+}
+.content .content_top ul li:hover:after
+{
+    color: #2a2e3d;
+}
+
+.content .main-content
+{
+    padding: 20px 60px;
+}
+.content .main-content > [class*='flex']
+{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #ababab;
+}
+.content .main-content .btn-select
+{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    padding-left: 10px;
+    line-height: 25px;
+    border-radius: 5px;
+    border: 1px solid #2a2e3d;
+}
+.content .main-content .btn-select:hover
+{
+    cursor: pointer;
+}
+.content .main-content .btn-select:hover .hidden-btn:checked + .dropdown
+{
+    display: block;
+}
+.content .main-content .btn-select .hidden-btn
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 99;
+}
+.content .main-content .btn-select .hidden-btn:hover
+{
+    cursor: pointer;
+}
+.content .main-content .btn-select .dropdown
+{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 26px;
+    left: 0;
+    list-style: none;
+    box-shadow: 0px 0px 5px #aaaaaa;
+    background-color: #ffffff;
+    border-radius: 5px;
+    z-index: 999;
+}
+.content .main-content .btn-select .dropdown li
+{
+    padding-left: 10px;
+}
+.content .main-content .btn-select .dropdown li:hover
+{
+    background-color: #bababe;
+}
+.content .main-content .btn-select.buyer
+{
+    width: 150px;
+}
+.content .main-content .btn-select i
+{
+    float: right;
+    line-height: 25px;
+    margin-right: 2px;
+}
+.content .main-content .search-box
+{
+    height: 100px;
+    padding: 20px 20px;
+    background-color: #ffffff;
+    font-size: .75rem;
+}
+.content .main-content .search-box form
+{
+    margin: 0 auto;
+}
+.content .main-content .search-box label
+{
+    padding-right: 10px;
+    padding-left: 20px;
+}
+.content .main-content .search-box .seller, .content .main-content .search-box .counters
+{
+    padding-top: 10px;
+}
+.content .main-content .search-box .column
+{
+    float: left;
+    margin-right: 15px;
+}
+.content .main-content .search-box .query
+{
+    width: 160px;
+}
+.content .main-content .search-box .buyer-seller
+{
+    width: 250px;
+    position: relative;
+}
+.content .main-content .search-box .buyer-seller .change
+{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0px;
+    left: 210px;
+    padding-top: 22px;
+    padding-left: 15px;
+    color: #ffffff;
+    background: url("image/change.png") no-repeat 3px 10px;
+}
+.content .main-content .search-box .buyer-seller .change:hover
+{
+    cursor: pointer;
+}
+.content .main-content .search-box .details
+{
+    position: relative;
+    width: 400px;
+}
+.content .main-content .search-box .details .input-date
+{
+    width: 120px;
+}
+.content .main-content .search-box .details .counter
+{
+    width: 100px;
+}
+.content .main-content .search-box .details .deals
+{
+    width: 100px;
+}
+.content .main-content .search-box .details .search-btn
+{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+    width: 50px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2189bf;
+    border-radius: 5px;
+}
+.content .main-content .search-box:after
+{
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
